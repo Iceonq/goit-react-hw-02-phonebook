@@ -1,13 +1,3 @@
-.label {
-  display: flex;
-  flex-direction: column;
-  width: 250px;
-  gap: 10px;
-}
-
-.label-title {
-  margin: 0;
-}
 
 body {
   background: linear-gradient(to bottom, #4b6cb7, #182848);
