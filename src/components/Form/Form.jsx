@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { nanoid } from 'nanoid';
 import PropTypes from 'prop-types';
+import css from './Form.module.css';
 
 export class Form extends Component {
   state = {
@@ -32,8 +33,8 @@ export class Form extends Component {
 
   render() {
     return (
-      <label className="label">
-        <h3 className="label-title">Name</h3>
+      <label className={css.label}>
+        <h3 className={css.labeltitle}>Name</h3>
         <input
           type="text"
           name="name"
@@ -43,7 +44,7 @@ export class Form extends Component {
           required
           onChange={this.handleChange}
         />
-        <h3 className="label-title">Number</h3>
+        <h3 className={css.labeltitle}>Number</h3>
         <input
           type="tel"
           name="number"
